@@ -59,11 +59,7 @@ public class FilmeForm {
 	public List<Filme> getCincoMelhores() {
 		FilmeDao fdao = new FilmeDao();
 		if (cincoMelhores == null)
-<<<<<<< HEAD
 			cincoMelhores = fdao.mostrar5melhores();
-=======
-			cincoMelhores = fdao.mostrar5Favoritos(usuarioSessao.getEmail());
->>>>>>> origin/master
 		return cincoMelhores;
 	}
 
@@ -212,7 +208,7 @@ public class FilmeForm {
 	public String adicionar() {
 		FilmeDao fdao = new FilmeDao();
 
-		// faltando id e outros atributos não-string
+		// faltando id e outros atributos nï¿½o-string
 		if (filme.getTitulo().isEmpty() || filme.getDescricao().isEmpty() || filme.getNome_arquivo().isEmpty()
 				|| filme.getNome_capa().isEmpty() || filme.getGenero().isEmpty() || filme.getAtores().isEmpty()) {
 
